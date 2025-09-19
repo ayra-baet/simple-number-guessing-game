@@ -6,13 +6,13 @@ let attempts = 0;
 let guess;
 
 while(true) {
-    guess = window.prompt(`Enter a number between ${minNum} and ${maxNum}`);
+    guess = window.prompt(`Enter a number between ${minNum} and ${maxNum}:`);
     guess = Number(guess);
 
     if (isNaN(guess)) {
         window.alert("Please enter a valid number.");
     } else if (guess < minNum || guess > maxNum) {
-        window.alert(`Number must be between ${minNum} and ${maxNum}`);
+        window.alert(`Number must be between ${minNum} and ${maxNum}.`);
     } else {
         attempts++;
         if (guess < answer) {
